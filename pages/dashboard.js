@@ -9,6 +9,7 @@ import styles from '../styles/Home.module.css';
 import Header from '../components/Header';
 import Dashboard from '../components/Dashboard';
 import 'react-toastify/dist/ReactToastify.css';
+import Minority from '../components/Minority';
 
 export default function Home() {
   const [session, loading] = useSession();
@@ -107,16 +108,11 @@ export default function Home() {
   return (
     <>
 
-      {/* {submit === true && errors === false
-       && <Dashboard username={session.user.name} userPic={session.user.image} />} */}
       {submit === false && errors === true && session && skip === false && (
       <>
         <Header className="bg-gray-200 flex flex-around px-10 py-4" />
-        <div className={`flex flex-row justify-around p-20 bg-gradient-to-r from-pink-500 to-yellow-500 h-screen ${styles.landing}`}>
-          <div className={`${styles.mailchimp}`}>
-            {/* left */}
-            <img src="./mp_asset_icon.svg" className="w-1/2 h-full " alt="mailchimp" />
-          </div>
+        <div className={`landing ${styles.landing}`}>
+          <Minority />
           <div className={`bg-blue-600 w-1/2 p-10 rounded-md ${styles.blueSection}`}>
             {/* right */}
             <div className="flex flex-row justify-between">
@@ -130,22 +126,87 @@ export default function Home() {
 
             <form className="flex flex-col" onSubmit={updateProfile}>
               <div className="absolute mt-6 w-1/4">
-                <input type="text" value={name} placeholder={(session.user.name).toLocaleLowerCase()} className={`input ${styles.textBox}`} readOnly />
-                <svg className={`svg ${styles.icon}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+                <input
+                  type="text"
+                  value={name}
+                  placeholder={(session.user.name).toLocaleLowerCase()}
+                  className={`input ${styles.textBox}`}
+                  readOnly
+                />
+                <svg
+                  className={`svg ${styles.icon}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                  />
+                </svg>
               </div>
               <div className="absolute mt-28 w-1/4">
-                <input type="email" value={email} placeholder="your email" className={`input ${styles.textBox}`} onChange={(e) => { e.preventDefault(); setEmail(e.target.value); }} required />
-                <svg className={`svg ${styles.icon}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                <input
+                  type="email"
+                  value={email}
+                  placeholder="your email"
+                  className={`input ${styles.textBox}`}
+                  onChange={(e) => { e.preventDefault(); setEmail(e.target.value); }}
+                  required
+                />
+                <svg
+                  className={`svg ${styles.icon}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
+                </svg>
               </div>
               <div className="absolute mt-48 w-1/4">
-                <input type="phone" value={phoneNumber} placeholder="your Phone" className={`input ${styles.textBox}`} onChange={(e) => { e.preventDefault(); setPhone(e.target.value); }} required />
-                <svg className={`svg ${styles.icon}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                <input
+                  type="phone"
+                  value={phoneNumber}
+                  placeholder="your Phone"
+                  className={`input ${styles.textBox}`}
+                  onChange={(e) => { e.preventDefault(); setPhone(e.target.value); }}
+                  required
+                />
+                <svg
+                  className={`svg ${styles.icon}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
+                </svg>
                 {' '}
 
               </div>
               <div className="mt-72 flex flex-row justify-around">
                 <button type="submit" className={`${styles.github} btn1`}>Create account</button>
-                <button type="button" className={` ${styles.github} btn2`} onClick={() => { setError(false); setSubmitted(true); setSkip(true); }}>Skip</button>
+                <button
+                  type="button"
+                  className={` ${styles.github} btn2`}
+                  onClick={() => { setError(false); setSubmitted(true); setSkip(true); }}
+                >
+                  Skip
+                </button>
               </div>
 
             </form>
@@ -187,7 +248,11 @@ export default function Home() {
                 {' '}
                 Welcome
                 {' '}
-                <span className="text-blue-500 hover:text-blue-800">{(session.user.name).toLowerCase()}</span>
+                <span
+                  className="text-blue-500 hover:text-blue-800"
+                >
+                  {(session.user.name).toLowerCase()}
+                </span>
                 , Have fun!!!
                 {' '}
               </p>
