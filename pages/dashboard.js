@@ -25,9 +25,9 @@ export default function Home() {
   const validate = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email);
   const updateProfile = async (event) => {
     event.preventDefault();
-    toast.warning('Checking inputs', {
+    toast.info('Checking inputs, please wait', {
       position: 'top-right',
-      autoClose: 3000,
+      autoClose: 5000,
       hideProgressBar: true,
       closeOnClick: true,
       pauseOnHover: true,
@@ -200,7 +200,7 @@ export default function Home() {
                 {' '}
 
               </div>
-              <div className="mt-72 mb-10 flex flex-row justify-around">
+              <div className={`mt-72 mb-10 flex flex-row justify-around ${styles.btnContainer}`}>
                 <button type="submit" className={`${styles.github} btn1`}>Create account</button>
                 <button
                   type="button"
@@ -213,17 +213,7 @@ export default function Home() {
 
             </form>
           </div>
-          <ToastContainer
-            position="top-right"
-            autoClose={3000}
-            hideProgressBar
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-          />
+          <ToastContainer />
         </div>
       </>
       )}
