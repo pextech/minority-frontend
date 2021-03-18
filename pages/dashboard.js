@@ -10,6 +10,8 @@ import Header from '../components/Header';
 import Dashboard from '../components/Dashboard';
 import 'react-toastify/dist/ReactToastify.css';
 import Minority from '../components/Minority';
+import FunTime from '../components/FunTime';
+import Fun from '../components/Fun';
 
 export default function Home() {
   const [session, loading] = useSession();
@@ -198,7 +200,7 @@ export default function Home() {
                 {' '}
 
               </div>
-              <div className="mt-72 flex flex-row justify-around">
+              <div className="mt-72 mb-10 flex flex-row justify-around">
                 <button type="submit" className={`${styles.github} btn1`}>Create account</button>
                 <button
                   type="button"
@@ -228,44 +230,7 @@ export default function Home() {
       {session && skip === true && submit === true && errors === false && (
       <>
         <Header className="bg-gray-200 flex flex-around px-10 py-4" />
-        <div className={`bg-white flex flex-row justify-between ${styles.soon}`}>
-          <div>
-            <video
-              loop
-              muted
-              className="w-full h-full border-r-none"
-              playsInline
-              autoPlay
-              track="true"
-              preload="auto"
-              src="./hm-hero-mobile.mp4"
-            />
-          </div>
-          <div className={`text-center w-1/2 ${styles.comingSoon}`}>
-            {session && (
-            <div className="flex flex-col">
-              <p className="text-xl font-light flex-row-reverse justify-center">
-                {' '}
-                Welcome
-                {' '}
-                <span
-                  className="text-blue-500 hover:text-blue-800"
-                >
-                  {(session.user.name).toLowerCase()}
-                </span>
-                , Have fun!!!
-                {' '}
-              </p>
-              {/* <img src="./emoji.gif" className="w-10 h-10 " alt="emoji" /> */}
-            </div>
-            )}
-            {!session && (
-            <p className="text-xl font-light mt-28">
-              Please first Signin
-            </p>
-            )}
-          </div>
-        </div>
+        <Fun />
       </>
       )}
       {!session

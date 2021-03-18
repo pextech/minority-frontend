@@ -8,7 +8,7 @@ Preview Design of Minority (preview)
 
 ## hosted version of the application
 
-<!-- If you want to have a look on the hosted version of the app click **[HERE]()** -->
+If you want to have a look on the hosted version of the app click **[HERE](https://minority-frontend.vercel.app/)**
 
 
 # Installation and Environment Setup ⚙︎ 
@@ -43,10 +43,10 @@ npm run dev
 # More Tools
 
 - ES6 Transpiler: **[Babel](babeljs.io)**
-<!-- - Deployment: **[Heroku](https://www.heroku.com)** and **[Netlify](https://www.netlify.com/)** -->
+- Deployment: **[Heroku](https://www.heroku.com)** and **[vercel](https://www.vercel.com/)**
 
 - Deployment : **Vercel**
-<!-- - link to the app: **[link](https://pextech.github.io/Front-end-dutygenerator/)** -->
+- link to the app: **[link](https://minority-frontend.vercel.app/)**
 
 # Contribute
 

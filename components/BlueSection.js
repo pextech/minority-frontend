@@ -39,7 +39,7 @@ function BlueSection() {
           </p>
           <p className="text-gray-200 mt-5">Click on the button below to signin using github Auth</p>
         </div>
-        <div className="mt-20 flex flex-row justify-around">
+        <div className="my-20 flex flex-row justify-around">
           <Link href="/api/auth/signin">
             <button
               type="button"
