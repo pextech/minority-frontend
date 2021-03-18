@@ -8,7 +8,7 @@ Preview Design of Minority (preview)
 
 ## hosted version of the application
 
-If you want to have a look on the hosted version of the app click **[HERE](https://minority-frontend.vercel.app/)**
+If you want to have a look on the hosted version of the app click **[HERE](https://minority-frontend-18wo2jwh4-pextech.vercel.app/)**
 
 
 # Installation and Environment Setup ⚙︎ 
