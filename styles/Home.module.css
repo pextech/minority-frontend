@@ -1,122 +1,231 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+@media only screen and (min-width:200px)  {
+  
+  .textBox{
+    width: 270%;
+  }
+  .icon{
+    margin-left: 0px;
+  }
 
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .github{
+    width: 100%;
 
-.footer {
+  }
+
+  .mailchimp img{width: 10%;}
+ .landing{
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+ }
+ .landing .blueSection {
   width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
+}
+.soon{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
-
-.footer img {
-  margin-left: 0.5rem;
+.soon .comingSoon{
+  padding-top: 0px;
+  width: 100%;
 }
+.soon .comingSoon p{
+  margin-top: 50px;
+  text-align: center;
+}
+ }
+/* 
+ @media only screen and (min-width:320px)  {
+  .textBox{
+    width: 250%;
+  
+  }
+   } */
+   @media only screen and (min-width:380px)  {
+    .textBox{
+      width: 300%;
+    
+    }
+    .soon{
+      display: flex;
+      flex-direction: column;
+    }
+    .soon .comingSoon{
+      padding-top: 0px;
+      width: 100%;
+    }
+    .soon .comingSoon p{
+      margin-top: 50px;
+      text-align: center;
+    }
+     }
+@media only screen and (min-width:400px)  {
+  .mailchimp img{width: 10%;}
+ .landing{
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+ }
+ .landing .blueSection {
+  width: 100%;
+  padding: 20px;
+}
+.textBox{
+  width: 320%;
 
-.footer a {
+}
+.soon{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.soon .comingSoon{
+  padding-top: 50px;
+  width: 100%;
 }
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.soon .comingSoon p{
+  margin-top: 0px;
+  text-align: center;
 }
+ }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+@media only screen and (min-width:600px)  {
+  .mailchimp img{width: 10%;}
+ .landing{
+   display: flex;
+   flex-direction: column;
+   padding: 40px;
+ }
+
+ .landing .blueSection {
+  width: 100%;
+  padding: 20px;
 }
+.textBox{
+  width: 335%;
 
-.title,
-.description {
+}
+.soon{
+  display: flex;
+  flex-direction: column;
+}
+.soon .comingSoon{
+  padding-top: 0px;
+  width: 100%;
+}
+.soon .comingSoon p{
+  margin-top: 50px;
+  text-align: center;
+}
+ }
+
+@media only screen and (min-width:800px)  {
+.mailchimp img{width: 10%;}
+ .landing{
+   display: flex;
+   flex-direction: column;
+   padding: 50px;
+ }
+ .landing .blueSection {
+  width: 100%;
+  padding: 20px;
+}
+ .intro{
+  display: flex;
+  flex-direction: row;
+
+ }
+ .soon{
+  display: flex;
+  flex-direction: column;
+}
+.soon .comingSoon{
+  padding-top: 100px;
+  width: 100%;
+  text-align: center;
+}
+.soon .comingSoon p{
+  margin-top: 50px;
+  text-align: center;
+  margin-left: 0px;
+}
+ .textBox{
+  width: 300%;
+
+}
+ }
+
+
+@media only screen and (min-width:1000px)  {
+ .landing{
+   display: flex;
+   flex-direction: row;
+   padding: 60px;
+ }
+ .mailchimp img{width: 50%;}
+ .intro{
+  display: flex;
+  flex-direction: row;
+
+ }
+ .textBox{
+  width: 100%;
+  margin-left: 0px;
+}
+ .landing .blueSection {
+  width: 100%;
+  padding: 50px;
+}
+.icon{
+  margin-left: 0px;
+}
+.soon{
+  display: flex;
+  flex-direction: row;
+}
+.soon .comingSoon{
+  padding-top: 100px;
+  width: 50%;
+}
+.soon .comingSoon p{
+  margin-top: 200px;
   text-align: center;
 }
 
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
+ }
+@media only screen and (min-width:1200px)  {
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.mailchimp img{width: 50%;}
+ .landing{
+   display: flex;
+   flex-direction: row;
+   padding: 80px;
+ }
+ .intro{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
-}
+  flex-direction: row;
 
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+ }
+ .textBox{
+  width: 120%;
+  margin-left: 0px;
 }
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+ .landing .blueSection {
+  width: 100%;
+  padding: 50px;
 }
-
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.icon{
+  margin-left: 0px;
 }
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.soon{
+  display: flex;
+  flex-direction: row;
 }
-
-.logo {
-  height: 1em;
+.soon .comingSoon{
+  padding-top: 100px;
+  width: 50%;
 }
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.soon .comingSoon p{
+  margin-top: 200px;
+  text-align: center;
 }
+ }

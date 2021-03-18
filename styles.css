@@ -1,0 +1,29 @@
+body{
+    display: none;
+}
+
+@media only screen and (min-width:1020px)  {
+    .headerContainer{
+      margin-left: 250px;
+    }
+    .headerContainer img{
+      margin-left: 70px;
+      width: 70%;
+    }
+    .headerContainer button{
+      margin-left: 10px;
+    }
+    .soon{
+      display: flex;
+      flex-direction: row;
+    }
+    .blog{
+      display: flex;
+      flex-direction: row;
+    }
+    .blog .title{
+     width: 50%;
+     margin-left: 50;
+     margin: 100px;
+    }
+   }
