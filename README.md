@@ -1,34 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Minority-Front-end (NEXTjs)
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
+```
+Preview Design of Minority (preview)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Design preview for the web app](./ui.png)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## hosted version of the application
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<!-- If you want to have a look on the hosted version of the app click **[HERE]()** -->
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+# Installation and Environment Setup ⚙︎ 
 
-To learn more about Next.js, take a look at the following resources:
+**Clone the repository from [Github](https://github.com/pextech/Resume-React.git).**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+( You will need **Git** for this if you are running a Windows PC, Get it [HERE](https://git-scm.com/) )
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+git clone https://github.com/pextech/Resume-React.git
+```
 
-## Deploy on Vercel
+**To Install all dependencies:** 🔧
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+npm install
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+**Now to run the app:**
+
+```
+npm run dev
+```
+
+
+# Tools used
+
+- NEXTjs **javascript UI library**
+- Tailwind: **css**
+
+# More Tools
+
+- ES6 Transpiler: **[Babel](babeljs.io)**
+<!-- - Deployment: **[Heroku](https://www.heroku.com)** and **[Netlify](https://www.netlify.com/)** -->
+
+- Deployment : **Vercel**
+<!-- - link to the app: **[link](https://pextech.github.io/Front-end-dutygenerator/)** -->
+
+# Contribute
+
+If you ever have an idea on how you might help improve the app, you are welcome to contribute your changes to the repository, Just follow the steps below:
+
+Assumming you have the repo cloned on your PC,
+
+- Pull the latest changes from the remote repo by running:
+
+```
+git pull origin main
+```
+
+NB: You need to be on the develop branch when you do this
+
+- Create & switch to the new branch where you will add your changes by running:
+
+```
+git checkout -b `yournewbranchname`
+```
+
+- After adding your changes, commit and push them to create a pull request against the develop branch. I will review and merge them if they are helpful.
+
+
+# Author 
+
+` Pextech 😎🇷🇼 `
+
