@@ -1,0 +1,3 @@
+[submodule "minority-backend"]
+	path = minority-backend
+	url = https://github.com/pextech/minority-backend.git
