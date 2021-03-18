@@ -2,11 +2,24 @@ import Head from 'next/head';
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useSession } from 'next-auth/client';
+import { useRouter } from 'next/router';
 import styles from '../styles/Home.module.css';
 import BlueSection from '../components/BlueSection';
 import Minority from '../components/Minority';
 
 export default function Home() {
+// uenabling use session to track user session
+
+  const [session] = useSession();
+  const Router = useRouter();
+
+  // pushing the user to the dashboard once signed in
+
+  if (session) {
+    Router.push('/dashboard');
+  }
+
   // useEffect for AOS page animation for every single render
 
   useEffect(() => {
